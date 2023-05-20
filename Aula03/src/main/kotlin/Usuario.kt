@@ -6,6 +6,18 @@ class Usuario
     var email : String = "";
     var idade: Int = 0;
     var senha : String = ""
+    var pet : Cachorro? = null; // Pet não obrigatório -> ?
+
+    constructor(nome: String, email : String)
+    {
+        this.nome = nome;
+        this.email = email
+    }
+
+    fun AdicionarPet(pet : Cachorro)
+    {
+        this.pet = pet;
+    }
 
     fun NomeEEmail() : String
     {
