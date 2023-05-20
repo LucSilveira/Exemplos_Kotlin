@@ -1,0 +1,1 @@
+C:\Users\lucas.portal\Desktop\SEBRAE\Aula03\build\classes\kotlin\main\Carro.class;C:\Users\lucas.portal\Desktop\SEBRAE\Aula03\build\classes\kotlin\main\MainKt.class;C:\Users\lucas.portal\Desktop\SEBRAE\Aula03\build\classes\kotlin\main\Usuario.class

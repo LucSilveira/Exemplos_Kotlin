@@ -128,28 +128,51 @@ fun main(args: Array<String>)
 
     // Exercicio 04 --------------------------
 
-    println("Quantas sequencias você deseja visualizar")
-    var quantidade = terminal.nextInt()
+    var array = Array<Int>(4){0}
 
-    if( quantidade < 2 )
+    println("Informe um número")
+    array[0] = terminal.nextInt()
+
+    println("Informe outro número")
+    array[1] = terminal.nextInt()
+
+    println("Informe outro número")
+    array[2] = terminal.nextInt()
+
+    println("Informe outro número")
+    array[3] = terminal.nextInt()
+
+    var soma = 0;
+    for( elemento in array )
     {
-        println( 1 )
-
-    }else{
-      var numero01 = 1
-      var numero02 = 1
-        var fn = 0
-
-        println(numero01)
-        println(numero01)
-
-        for (n in 0 until ( quantidade - 2) )
-        {
-            fn = numero01 + numero02
-            numero01 = numero02
-            numero02 = fn
-
-            println(fn)
-        }
+        soma = soma + elemento
     }
+
+    println(soma)
+    // Exercicio 08 -------------------------
+
+//    println("Quantas sequencias você deseja visualizar")
+//    var quantidade = terminal.nextInt()
+//
+//    if( quantidade < 2 )
+//    {
+//        println( 1 )
+//
+//    }else{
+//      var numero01 = 1
+//      var numero02 = 1
+//        var fn = 0
+//
+//        println(numero01)
+//        println(numero01)
+//
+//        for (n in 0 until ( quantidade - 2) )
+//        {
+//            fn = numero01 + numero02
+//            numero01 = numero02
+//            numero02 = fn
+//
+//            println(fn)
+//        }
+//    }
 }
