@@ -1,12 +1,15 @@
 class Usuario
 {
-    // Todo usuario do meu sistme, vai ter as
+    // Todo usuario do meu sistema, vai ter as
     // propriedas e metodos de um usuairo
-    var nome : String = "";
-    var email : String = "";
+    private var nome : String = "";
+    private var email : String = "";
     var idade: Int = 0;
     var senha : String = ""
     var pet : Cachorro? = null; // Pet não obrigatório -> ?
+
+    // mutableList = lista variavel
+    var carrosUsuario : MutableList<Carro> = mutableListOf()
 
     constructor(nome: String, email : String)
     {
@@ -27,5 +30,10 @@ class Usuario
     fun MudarSenha(novaSenha : String)
     {
         senha = novaSenha
+    }
+
+    fun AlterarEmail(novoEmail : String)
+    {
+        email = novoEmail
     }
 }
