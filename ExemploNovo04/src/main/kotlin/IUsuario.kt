@@ -1,0 +1,4 @@
+interface IUsuario
+{
+    fun Logar()
+}

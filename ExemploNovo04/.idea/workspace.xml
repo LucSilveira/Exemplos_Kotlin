@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="46b74591-bac1-49ed-886b-49b1bc79adf2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Automovel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Carro.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/IUsuario.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Moto.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Orgs/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Orgs/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Orgs/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Orgs/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Orgs/.idea/kotlinc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Orgs/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Orgs/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Orgs/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Orgs/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Orgs/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Orgs/app/src/androidTest/java/com/example/orgs/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Orgs/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Orgs/app/src/main/java/com/example/orgs/MainActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Orgs/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Orgs/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Orgs/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Orgs/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Orgs/app/src/main/res/mipmap-anydpi-v33/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Orgs/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Orgs/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Orgs/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Orgs/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Orgs/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Orgs/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Orgs/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Orgs/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Orgs/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Orgs/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Orgs/app/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Orgs/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Orgs/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Orgs/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Orgs/app/src/main/res/xml/backup_rules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Orgs/app/src/main/res/xml/data_extraction_rules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Orgs/app/src/test/java/com/example/orgs/ExampleUnitTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Orgs/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Orgs/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Orgs/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Orgs/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Orgs/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Orgs/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Orgs/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../estudo_kotlin/ConditionsClass/src/main/kotlin/UserInterface.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exemplo02/exemplo02.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exemplo0202/build/js/node_modules/source-map-loader/node_modules/iconv-lite/.idea/iconv-lite.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exemploAppNovo/app/src/main/res/drawable/shines.png" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+        <option value="Kotlin Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2QNRvEG8njCM9RWScwytkj8wEIF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "run.code.analysis.last.selected.profile": "pProject Default"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="46b74591-bac1-49ed-886b-49b1bc79adf2" name="Changes" comment="" />
+      <created>1685192284924</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1685192284924</updated>
+    </task>
+    <servers />
+  </component>
+</project>
