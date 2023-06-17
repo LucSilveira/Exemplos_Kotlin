@@ -12,11 +12,29 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="80dp" app:layout_constraintHorizontal_bias="0.498"/>
-    <Button
-            android:text="Jokenpo"
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="112dp"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.4"
+            android:layout_marginBottom="40dp">
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:srcCompat="@drawable/papel" android:id="@+id/btn_papel"
+                android:layout_weight="1" android:contentDescription="Papel"/>
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:srcCompat="@drawable/pedra" android:id="@+id/btn_pedra"
+                android:layout_weight="1" android:contentDescription="Pedra"/>
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:srcCompat="@drawable/tesoura" android:id="@+id/btn_tesoura"
+                android:layout_weight="1" android:contentDescription="Tesoura"/>
+    </LinearLayout>
+    <TextView
+            android:text="TextView"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/button"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imgMaquina" android:layout_marginTop="96dp"
-            app:layout_constraintHorizontal_bias="0.498"/>
+            android:layout_height="wrap_content" android:id="@+id/textView" tools:layout_editor_absoluteY="371dp"
+            tools:layout_editor_absoluteX="175dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
