@@ -3,6 +3,8 @@ package com.example.exemplocruddbo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
+import android.widget.Button
+import android.widget.EditText
 import android.widget.ListView
 
 class MainActivity : AppCompatActivity()
@@ -18,9 +20,23 @@ class MainActivity : AppCompatActivity()
 
         // Criando o banco
         val dbo = DBConnect(this);
-        val listaUsuario = dbo.ListarUsuarios()
+        ListarUsuarios( dbo.ListarUsuarios() )
 
-        ListarUsuarios( listaUsuario )
+        val btn_inserir = findViewById<Button>(R.id.btn_cadastrar)
+        btn_inserir.setOnClickListener()
+        {
+
+            val nomeUsuario = findViewById<EditText>(R.id.nome).text.toString()
+            val emailUsuario = findViewById<EditText>(R.id.email).text.toString()
+
+            // Mandar as informações pro banco
+            dbo.InserirUsuario(nomeUsuario, emailUsuario)
+
+            ListarUsuarios( dbo.ListarUsuarios() )
+        }
+
+        val btn_remover = findViewById<Button>(R.id.btn_remover)
+
     }
 
     // Ler a lista e exibir

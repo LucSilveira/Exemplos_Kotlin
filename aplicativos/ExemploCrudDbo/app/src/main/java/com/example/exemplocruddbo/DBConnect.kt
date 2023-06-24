@@ -1,5 +1,6 @@
 package com.example.exemplocruddbo
 
+import android.content.ContentValues
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
@@ -57,5 +58,24 @@ class DBConnect( context : Context ) : SQLiteOpenHelper(context, "database.db", 
         dbo.close()
 
         return listaUsuario
+    }
+
+    fun InserirUsuario(nome : String, email : String)
+    {
+        val db = this.writableDatabase
+
+        val valoresUsuario = ContentValues()
+        valoresUsuario.put("nome", nome)
+        valoresUsuario.put("email", email)
+
+        val insertUsuario = db.insert("Usuario", null, valoresUsuario);
+        db.close()
+    }
+
+    fun RemoverUsuario(id : Int)
+    {
+        val db = this.writableDatabase
+        db.delete("Usuario", "id=?", arrayOf( id.toString() ))
+        db.close()
     }
 }
