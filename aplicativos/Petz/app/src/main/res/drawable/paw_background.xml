@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/background_item">
+        <shape android:shape="oval">
+            <solid android:color="#F9F9F9" /> <!-- Cor de fundo branca -->
+        </shape>
+    </item>
+    <item android:id="@+id/border_item">
+        <shape android:shape="oval">
+            <solid android:color="#F9F9F9" /> <!-- Cor de fundo branca -->
+            <stroke android:color="#FFA500" android:width="5dp" /> <!-- Cor da borda laranja -->
+        </shape>
+    </item>
+</layer-list>

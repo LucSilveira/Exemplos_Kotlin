@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+            android:id="@+id/card_pet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginVertical="20dp"
+            android:background="#ffffff">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+        >
+
+            <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    app:srcCompat="@drawable/baseline_pets_24"
+                    android:id="@+id/imageView"
+                    tools:layout_editor_absoluteX="151dp"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginVertical="15dp"
+            >
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="Spike"
+                        android:textSize="24dp"
+                        android:textColor="#33303E"
+                        android:id="@+id/nomePet"
+                        android:fontFamily="@font/mochiy_pop_p_one"
+                        android:layout_weight="1"
+                />
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="localização"
+                        android:id="@+id/localPet"
+                        android:fontFamily="@font/raleway_medium"
+                        android:textColor="#5F5C6B"
+                        android:layout_gravity="start|end"
+                />
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="localização"
+                        android:id="@+id/descricaoPet"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:textColor="#5F5C6B"
+                        android:layout_gravity="end"
+                />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:src="@drawable/paw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabCustomSize="60dp"
+            app:layout_constraintTop_toTopOf="@+id/card_pet"
+            app:layout_constraintStart_toStartOf="@+id/card_pet"
+            app:layout_constraintEnd_toEndOf="@+id/card_pet"
+            app:layout_constraintHorizontal_bias="1.1"
+            app:layout_constraintVertical_bias="1.4"
+            app:borderWidth="2dp"
+            android:backgroundTint="@color/white"
+            app:tint="@color/laranja"
+            app:maxImageSize="30dp"
+            app:layout_constraintBottom_toBottomOf="@+id/card_pet"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

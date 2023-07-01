@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@android:color/transparent" /> <!-- Cor de fundo transparente -->
+    <stroke android:color="@color/laranja_var_dark" android:width="3dp" /> <!-- Cor da borda laranja e largura de 2dp -->
+    <corners android:radius="8dp" /> <!-- Raio de arredondamento das bordas -->
+</shape>
