@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <font
+        android:fontWeight="400"
+        android:font="@font/mochiy_pop_p_one"/>
+
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="500"
+        android:font="@font/raleway"/>
+    <font
+        android:fontStyle="normal"
+        android:font="@font/raleway_regular"/>
+    <font
+        android:fontStyle="normal"
+        android:font="@font/raleway_medium"/>
+    <font
+        android:fontStyle="normal"
+        android:font="@font/raleway_semibold"/>
+    <font
+        android:fontStyle="normal"
+        android:font="@font/raleway_bold"/>
+
+</font-family>

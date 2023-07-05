@@ -11,8 +11,8 @@ import com.example.petz.model.Pet
 class DBConnect(context : Context) : SQLiteOpenHelper(context, "database.db", null, 1)
 {
     val sql = arrayOf(
-        "CREATE TABLE Pet(id INTEGER PRIMARY KEY AUTOINCREMENT, nome TEXT, localizacao TEXT, idade INTEGER, tipoIdade TEXT, raca TEXT)",
-        "INSERT INTO Pet(nome, localizacao, idade, tipoIdade, raca) VALUES ('Spot', 'Brooklin, SP', 8, 'anos', 'Labrador')"
+        "CREATE TABLE Pet(id INTEGER PRIMARY KEY AUTOINCREMENT, nome TEXT, raca TEXT, localizacao TEXT, idade INTEGER, tipoIdade TEXT)",
+        "INSERT INTO Pet(nome, raca, localizacao, idade, tipoIdade) VALUES ('teste', 'teste', 'teste', 1, 'teste')"
     )
 
     override fun onCreate(db: SQLiteDatabase)
@@ -55,27 +55,62 @@ class DBConnect(context : Context) : SQLiteOpenHelper(context, "database.db", nu
     }
 
 
-    fun AdicionarNovoPet(context: Context, pet : Pet)
+//    fun AdicionarNovoPet(context: Context, pet : Pet)
+    fun AdicionarNovoPet(nome : String, raca : String, local: String, idade : Int, tipoIdade : String)
     {
-        try
-        {
+//        try
+//        {
             // Criando a conexão com o banco de dados
             val db = this.writableDatabase
             val valoresInsercao = ContentValues();
 
             // Mapeando os valores dos elementos
-            valoresInsercao.put("nome", pet.nome)
-            valoresInsercao.put("raca", pet.raca)
-            valoresInsercao.put("idade", pet.idade)
-            valoresInsercao.put("tipoIdade", pet.tipoIdade)
-            valoresInsercao.put("localizacao", pet.localizacao)
+//            valoresInsercao.put("nome", pet.nome)
+            valoresInsercao.put("nome", nome)
+//            valoresInsercao.put("raca", pet.raca)
+            valoresInsercao.put("raca", raca)
+//            valoresInsercao.put("localizacao", pet.localizacao)
+            valoresInsercao.put("localizacao", local)
+//            valoresInsercao.put("idade", pet.idade)
+            valoresInsercao.put("idade", idade)
+//            valoresInsercao.put("tipoIdade", pet.tipoIdade)
+            valoresInsercao.put("tipoIdade", tipoIdade)
 
             // Inserindo no banco de dados
             db.insert("Pet", null, valoresInsercao)
             db.close()
 
-        }catch (e: Exception){
-            Toast.makeText(context, "Erro na inserção", Toast.LENGTH_SHORT).show()
-        }
+//        }catch (e: Exception){
+//            Toast.makeText(context, "Erro na inserção", Toast.LENGTH_SHORT).show()
+//        }
+    }
+
+    fun AlterarPet(id:Int, nome : String, raca : String, local: String, idade : Int, tipoIdade : String)
+    {
+//        try
+//        {
+            // Criando a conexão com o banco de dados
+            val db = this.writableDatabase
+            val valoresInsercao = ContentValues();
+
+            // Mapeando os valores dos elementos
+//            valoresInsercao.put("nome", pet.nome)
+            valoresInsercao.put("nome", nome)
+//            valoresInsercao.put("raca", pet.raca)
+            valoresInsercao.put("raca", raca)
+//            valoresInsercao.put("localizacao", pet.localizacao)
+            valoresInsercao.put("localizacao", local)
+//            valoresInsercao.put("idade", pet.idade)
+            valoresInsercao.put("idade", idade)
+//            valoresInsercao.put("tipoIdade", pet.tipoIdade)
+            valoresInsercao.put("tipoIdade", tipoIdade)
+
+            // Inserindo no banco de dados
+            db.update("Pet", valoresInsercao, "id=?", arrayOf( id.toString() ))
+            db.close()
+
+//        }catch (e: Exception){
+//            Toast.makeText(context, "Erro na Atualização", Toast.LENGTH_SHORT).show()
+//        }
     }
 }

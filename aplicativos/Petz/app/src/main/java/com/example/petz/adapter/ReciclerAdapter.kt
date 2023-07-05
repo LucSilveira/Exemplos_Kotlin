@@ -1,12 +1,16 @@
 package com.example.petz.adapter
 
+import android.app.Activity
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.petz.R
+import com.example.petz.activitys.FormActivity
+import com.example.petz.dbo.DBConnect
 import com.example.petz.model.Pet
 
 class ReciclerAdapter
@@ -27,6 +31,9 @@ class ReciclerAdapter
 
             val localizacao = itemView.findViewById<TextView>(R.id.localPet)
             localizacao.text = pet.localizacao
+
+            val descricao = itemView.findViewById<TextView>(R.id.descricaoPet)
+            descricao.text = "${pet.nome}, ${pet.idade} ${pet.tipoIdade}"
         }
     }
 
@@ -47,11 +54,12 @@ class ReciclerAdapter
         val produto = listaPets[position]
         holder.vincular(produto)
 
-//        holder.itemView.setOnClickListener {
-//            val intent = Intent(holder.itemView.context, FormProdutoActivity::class.java)
-//            intent.putExtra("position", position)
-//            (holder.itemView.context as Activity).startActivityForResult(intent, REQUEST_CODE_ITEM_DETAILS)
-//        }
+        holder.itemView.setOnClickListener{
+            val intent = Intent(holder.itemView.context, FormActivity::class.java)
+            intent.putExtra("position", position)
+
+            (holder.itemView.context as Activity).startActivityForResult(intent, REQUEST_CODE_ITEM_DETAILS)
+        }
     }
 
 }
